@@ -1,0 +1,21 @@
+#Regle {
+    border: #721c24 solid;
+    border-radius: 30px;
+    background-color: #721c24;
+    color: white;
+}
+
+input {
+    background-color: #007bff;
+    color: white;
+}
+
+button {
+    background-color: white;
+    color: #002752;
+}
+
+section {
+    border: #002752 solid;
+    border-radius: 30px;
+}
