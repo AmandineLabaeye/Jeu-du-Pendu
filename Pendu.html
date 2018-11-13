@@ -5,6 +5,7 @@
     <title>Title</title>
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="Pendu.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
 <body>
 
@@ -18,11 +19,19 @@
 
             <br>
 
-            <h4> Attention !!!! Les mots à deviner sont tous en MAJUSCULES ! Aucune minuscule sera accepté ! </h4>
+            <h4> Attention !!!! Les mots ne comportent aucune Majuscule et aucun accent ! </h4>
 
             <br>
 
-            <h4>Le but :</h4>
+            <h5>Le but :</h5>
+
+            <br>
+
+            <h5> Trouvez le bon mot avec un nombre de chance limité ! </h5>
+
+            <br>
+
+            <h5> Vous avez 10 chances de trouver le mot ! </h5>
 
         </div>
 
@@ -34,9 +43,31 @@
 
     <div class="row">
 
+        <div class="col-sm-4 text-center mt-2">
+
+            <button id="Facile" class="btn"> Facile </button>
+
+        </div>
+
+        <div class="col-sm-4 text-center mt-2">
+
+            <button id="Normal" class="btn"> Normal </button>
+
+        </div>
+
+        <div class="col-sm-4 text-center mt-2">
+
+            <button id="Difficile" class="btn"> Difficile </button>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+
         <div id="DivPr" class="col-sm-12 text-center mt-4 mb-4">
 
-            <h4 id="Aleatoire"></h4>
+            <h4 id="Chance"> Vous avez utilisé 0 vie sur 10 </h4>
 
         </div>
 
@@ -44,29 +75,33 @@
 
     <div class="row">
 
-        <div class="col-sm-12 text-center mt-4 mb-4">
+        <div class="col-sm-6 text-center mt-4 mb-4">
 
-            <label> Entre une lettre : <br> <input id="Input" type="text" maxlength="1"></label>
+            <label> Entre une lettre : <br> <input id="Input" type="text" maxlength="1" autofocus></label>
 
         </div>
+
+        <div class="col-sm-6 mt-4 mb-4"></div>
 
     </div>
 
     <div class="row">
 
-        <div id="Div" class="col-sm-12 text-center mt-4">
+        <div id="Div" class="col-sm-6 text-center mt-4">
 
-            <button id="Valider"> Vérifier </button> <br> <br>
+            <button id="Valider" class="btn"> Vérifier </button> <br> <br>
 
             <span id="Valeur"></span> <br> <br>
 
         </div>
 
+        <div class="col-sm-6 mt-4 mb-4"></div>
+
     </div>
 
     <div class="row">
 
-        <div id="Reponse" class="col-sm-12 text-center mb-4">
+        <div id="Reponse" class="col-sm-6 text-center mb-4">
 
             <span id="lettre0"></span>
 
@@ -94,7 +129,11 @@
 
         </div>
 
+        <div class="col-sm-6 mt-4 mb-4"></div>
+
     </div>
+
+
 
     <div class="row">
 
@@ -102,7 +141,31 @@
 
     </div>
 
+    <div class="row">
+
+        <div id="Resultat" class="col-sm-12 text-center mb-4 mt-4"></div>
+
+    </div>
+
 </section>
+
+<footer>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div id="ResetT" class="col-sm-12 text-center mb-4 mt-4">
+
+            <button id="Reset" class="btn"> Reset </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
 
 <script src="Pendu.js"></script>
 

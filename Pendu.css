@@ -1,3 +1,7 @@
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
 #Regle {
     border: #721c24 solid;
     border-radius: 30px;
@@ -5,8 +9,16 @@
     color: white;
 }
 
+h4 {
+    color: red;
+}
+
+h5 {
+    text-decoration: underline;
+}
+
 input {
-    background-color: #007bff;
+    background-color: #002752;
     color: white;
 }
 
@@ -18,4 +30,42 @@ button {
 section {
     border: #002752 solid;
     border-radius: 30px;
+    background-color: #002752;
+}
+
+#Aleatoire {
+    color: white;
+}
+
+#Chance {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+#Valeur {
+    color: white;
+}
+
+#Reponse {
+    color: white;
+}
+
+#Indication {
+    color: white;
+    font-size: 20px;
+}
+
+#Resultat {
+    color: white;
+    font-size: 30px;
+}
+
+#ResetT {
+    border: #721c24 solid;
+    border-radius: 30px;
+    background-color: #721c24;
+    color: white;
 }
